@@ -1,0 +1,815 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>d09210298羅巧容</title>
+<style>
+
+	@media only screen and (max-width: 600px) {
+		.layout{
+		width: 60%;
+		margin: 0 auto;
+		overflow: hidden;
+		background-color: #F7F4E9;
+		font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體", sans-serif;
+	}
+	.top{
+		width: 60%;
+		margin: 0 auto;
+		overflow: hidden;
+		background-color: #0FEA43;
+		border: 1px solid #FFFFFF;
+	}
+	.header{
+		float: inherit;
+		width: 60%;
+		height: 86px;
+		background-color: #FFFFFF;
+		text-align: center;
+	}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	.kiwitext{
+		width: 900px;
+		text-align: justify;
+		float: inherit;
+		font-size: 24px;
+		border: 2px dotted #0FEA43;
+		margin-left: 50px;
+		margin-top: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 10px;
+		color: #127014;
+	}
+	.gooditem{
+		width: 900px;
+		margin-left: 50px;
+		margin-top: 10px;
+		text-align: center;
+		color: #127014;
+		background-color: #0FEA43;
+		padding-top: 8px;
+		border-radius: 10px;
+	}
+	#photowall{
+		background-color: #C8F9C7;
+		width: 900px;
+		margin: 0 auto;
+		overflow:hidden;
+	}
+	.photowalltext{
+		widch:230px;
+		text-align: center;
+		border-style: none none dotted none;
+		overflow:hidden;
+		font-family: "微軟正黑體", cursive, sans-serif;
+	}
+	.w3-myfont {
+  		font-family: "微軟正黑體", cursive, sans-serif;
+		text-align: center;
+		overflow:hidden;
+}
+	.food{
+		width: 280px;
+		background-color: #FFFFFF;
+		overflow:hidden;
+		float:left;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+	}
+	.food-con{
+		height: 100px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.food-con h3{
+		font-size: 16px;
+		padding-top: 4px;
+		text-align: left;
+	}
+	.fctext{
+		border-top: 1px #999999;
+		overflow: hidden;
+	}
+	.fct-left{
+		padding-top: 33px;
+		color: #FF5353;
+		float: left;
+	}
+	.fct-right{
+		padding-top: 50px;
+		float: right;
+		padding-left: 33px;
+	}
+	.fct-righ{
+		padding-top: 50px;
+		float: right;
+		padding-left: 10px;
+	}
+	.food-img{
+		background-image: url("637465705515470000.jpg");
+		background-repeat: no-repeat;
+		overflow:hidden;
+	}
+	.food-img img:hover{
+		transform: scale(1.2,1.2);
+	 	
+	}
+	.food-img img{
+		transition: 1s;
+	}
+	.pp{
+		widows: 1000px;
+		padding-top: 10px;
+	}
+}
+	.layout{
+		width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		background-color: #F7F4E9;
+		font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體", sans-serif;
+	}
+	.top{
+		width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		background-color: #0FEA43;
+		border: 1px solid #FFFFFF;
+	}
+	.top-left{
+		float: left;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 6px;
+		margin-left: 4px;
+		color: #127014;
+	}
+	.top-right{
+		float: right;
+		font-size: 24px;
+		text-align: center;
+		margin-right: 2px;
+	}
+	.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0FEA43;
+  border: 1px solid #FFFFFF;
+  color: #0FEA43;
+  padding-top: 2px;
+  font-size: 24px;
+  width: 80px;
+  height: 32px;
+  transition: 2s;
+  cursor: pointer;
+  background-image: linear-gradient(#94F98A, #0FEA43);
+  font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體", sans-serif;
+		overflow:hidden;
+	}
+	.button:hover{
+  transform: scale(0.9,0.9);
+  background-image: linear-gradient(#0FEA43, #009245);
+	}
+	.header{
+		float: inherit;
+		width: 1000px;
+		height: 86px;
+		background-color: #FFFFFF;
+		text-align: center;
+	}
+	.bigbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #E0C19B;
+  border: 2px solid #0FEA43;
+  color: #127014;
+  padding-top: 0px;
+  font-size: 36px;
+  width: 170px;
+  height: 78px;
+  transition: 2s;
+  cursor: pointer;
+  background-image: linear-gradient(#ffffff, #C7FFE0);
+  font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體", sans-serif;
+		overflow:hidden;
+}
+
+	.bigbutton:hover{
+  transform: scale(0.9,0.9);
+  background-image: linear-gradient(#C7FFE0, #8FFFA1);
+		border: 2px solid #26A53B;
+		color: #0C540E;
+}
+	.menu{
+		float: right;
+		padding-top: 4px;
+		height: 86px;
+		margin-left: 20px;
+		color: #F7F4E9;
+	}
+	.new{
+		width: 1000px;
+	}
+	* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	.kiwitext{
+		width: 900px;
+		text-align: justify;
+		float: inherit;
+		font-size: 24px;
+		border: 2px dotted #0FEA43;
+		margin-left: 50px;
+		margin-top: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 10px;
+		color: #127014;
+	}
+	.gooditem{
+		width: 900px;
+		margin-left: 50px;
+		margin-top: 10px;
+		text-align: center;
+		color: #127014;
+		background-color: #0FEA43;
+		padding-top: 8px;
+		border-radius: 10px;
+	}
+	#photowall{
+		background-color: #C8F9C7;
+		width: 900px;
+		margin: 0 auto;
+		overflow:hidden;
+	}
+	.photowalltext{
+		widch:230px;
+		text-align: center;
+		border-style: none none dotted none;
+		overflow:hidden;
+		font-family: "微軟正黑體", cursive, sans-serif;
+	}
+	.w3-myfont {
+  		font-family: "微軟正黑體", cursive, sans-serif;
+		text-align: center;
+		overflow:hidden;
+}
+	.food{
+		width: 280px;
+		background-color: #FFFFFF;
+		overflow:hidden;
+		float:left;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+	}
+	.food-con{
+		height: 100px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.food-con h3{
+		font-size: 16px;
+		padding-top: 4px;
+		text-align: left;
+	}
+	.fctext{
+		border-top: 1px #999999;
+		overflow: hidden;
+	}
+	.fct-left{
+		padding-top: 33px;
+		color: #FF5353;
+		float: left;
+	}
+	.fct-right{
+		padding-top: 50px;
+		float: right;
+		padding-left: 33px;
+	}
+	.fct-righ{
+		padding-top: 50px;
+		float: right;
+		padding-left: 10px;
+	}
+	.food-img{
+		background-image: url("637465705515470000.jpg");
+		background-repeat: no-repeat;
+		overflow:hidden;
+	}
+	.food-img img:hover{
+		transform: scale(1.2,1.2);
+	 	
+	}
+	.food-img img{
+		transition: 1s;
+	}
+	.pp{
+		widows: 1000px;
+		padding-top: 10px;
+	}
+	.demo{
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+            margin-bottom: 100px;
+            margin-right: 50px;
+        }
+        .btn{
+            position: fixed;
+            right: 0;
+            top: 20px;
+            background-color: #0000cc;
+            color: #ffffff;
+        }
+</style>
+</head>
+<body>
+<div class="layout">
+		<div class="top">
+			<div class="top-left">
+				Copyright © KIWI 2021 
+			</div>
+				<div class="top-right">
+					<button class="button"><a href="#"><img src="images/購買.png" width="auto" height="24" alt=""/></a>
+					</button>
+					<button class="button"><a href="#"><img src="images/會員.png" width="auto" height="24" alt=""/></a>
+					</button>
+				</div>
+			
+			
+		</div>
+		<div class="header">
+			<a href="#"><img src="images/logo.png" width="auto" height="86" alt=""/></a>
+				<div class="menu">
+				  <button class="bigbutton"><a href="#demo">關於</a></button>
+					<button class="bigbutton">商品</button>
+					<button class="bigbutton">門市</button>
+				</div>
+			
+		</div>
+	<div class="new">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/LINE_ALBUM_合體_211228.jpg" width="1000" height="auto" alt=""/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/LINE_ALBUM_酷人嗎_211228.jpg" width="1000" height="auto" alt=""/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/LINE_ALBUM_綠ㄐㄐ藏在哪_211228.jpg" width="1000" height="auto" alt=""/>
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+	<div class="kiwitext" id="demo">
+		<h1>企業理念</h1>
+		KIWI能憑著誠懇簡單的想法加上一股勇敢創作的心,
+		如小朋友一樣靠著雙手盡完成每一則擁有故事的天真創意,足夠讓世界上的每一個大人都感染到簡單的快樂,讓人一旦抱在懷裡立即愛不釋手。
+	</div>
+	<div class="gooditem">
+		<h2>推薦商品</h2>
+	<div id="photowall">
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥撲滿</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$760</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637572906351470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥束口袋</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$450</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637552208240970000.jpg" width="auto" height="232" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥鑰匙圈</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$290</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465708994900000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥手機座</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$550</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705521570000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥造型筆袋</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$630</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 25cm奇異鳥坐姿玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$760</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 120cm奇異鳥坐姿玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$7,100</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465709122530000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥寶寶蛋鑰匙圈</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$420</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637528682582800000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥磁鐵玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$340</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705958900000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥馬克杯</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$290</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div><div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 35cm奇異鳥坐姿玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$1,000</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div><div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 50cm奇異鳥坐姿玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$1,600</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div><div class="food">
+		<div class="food-img">
+		  <img src="images/637718979403530000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 奇異鳥造型飲料套鑰匙圈</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$420</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465708481630000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 18cm奇異鳥造型零錢包</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$550</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="food">
+		<div class="food-img">
+		  <img src="images/637465705515470000.jpg" width="232" height="auto" alt=""/>
+      </div>
+		<div class="food-con">
+			<div class="photowalltext"><strong>KIWI 80cm奇異鳥坐姿玩偶</strong></div>
+			<div class="fctext">
+			<div class="fct-left">
+			<p class="w3-myfont">NT$3,570</p>
+			  </div>
+				<div class="fct-right">
+				<a href=""><img src="images/1636338122222.jpg" width="20" height="20" alt=""/></a>
+			  </div>
+			  <div class="fct-righ">
+					<a href=""><img src="images/1636338090980.jpg" width="21" height="21" alt=""/></a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="pp">
+    <img src="images/22024688616566_851.jpg" width="1000" height="auto" alt=""/> 
+	</div>
+</div>
+</body>
+</html>
